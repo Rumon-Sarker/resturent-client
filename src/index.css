@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#dashboard a.active {
+    color: orange;
+
+}
