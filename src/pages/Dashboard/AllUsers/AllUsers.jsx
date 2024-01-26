@@ -9,7 +9,7 @@ const AllUsers = () => {
     const [axiosSecure] = useAxiosSecure();
     // const [users, setUsers] = useState([])
     // useEffect(() => {
-    //     fetch('http://localhost:5000/users')
+    //     fetch('https://resturent-server-seven.vercel.app/users')
     //         .then(res => res.json())
     //         .then(data => setUsers(data))
     // }, [])
@@ -21,7 +21,7 @@ const AllUsers = () => {
     })
 
     const handaleAdmin = (user) => {
-        fetch(`http://localhost:5000/users/admin/${user._id}`, {
+        fetch(`https://resturent-server-seven.vercel.app/users/admin/${user._id}`, {
             method: "PATCH"
         })
             .then(res => res.json())

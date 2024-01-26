@@ -16,7 +16,7 @@ const OrderCart = ({ item }) => {
         const cartItems = { orderid: _id, name, image, price, email: user?.email };
         console.log(cartItems);
         if (user && user?.email) {
-            fetch("http://localhost:5000/carts", {
+            fetch("https://resturent-server-seven.vercel.app/carts", {
                 method: "POST",
                 headers: {
                     "content-type": "application/json"

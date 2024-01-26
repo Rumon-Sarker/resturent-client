@@ -16,7 +16,7 @@ const SochalLogin = () => {
                 const loggeduser = result.user;
                 console.log(loggeduser)
                 const users = { name: loggeduser.displayName, email: loggeduser.email }
-                fetch('http://localhost:5000/users', {
+                fetch('https://resturent-server-seven.vercel.app/users', {
                     method: "POST",
                     headers: {
                         "content-type": "application/json"

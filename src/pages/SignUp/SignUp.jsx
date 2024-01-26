@@ -20,7 +20,7 @@ const SignUp = () => {
                 updateUserProfile(data.photoUrl, data.name,)
                     .then(() => {
                         const users = { name: data.name, email: data.email }
-                        fetch('http://localhost:5000/users', {
+                        fetch('https://resturent-server-seven.vercel.app/users', {
                             method: "POST",
                             headers: {
                                 "content-type": "application/json"
